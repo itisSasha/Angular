@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body ng-app>
+<!-- ng-app 指令通常放在body标签里 -->
+  
+
+<input type="text" ng-model="username">
+<!-- ng-model: 将当前输入框的值与谁关联(属性名:属性值)，并且作为当前作用域对象($rootScope)的属性{{}}：显示数据，从当前作用域对象的指定属性名上取 -->
+<p>您输入的内容是: <span>{{username}}</span></p>
+<script src="../../js/angular-1.2.29/angular.js"></script>
+
+</body>
+</html>
